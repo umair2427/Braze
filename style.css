@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --lightgreen: #8bc34a;
+    --white: #fff;
+    --black: #000;
+    --lightgray: rgb(185, 172, 172);
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+
+.head{
+    background: url("./images/slides/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    position: relative;
+    color: var(--white);
+}
+
+.head .head-text{
+    position: absolute;
+    top: 53%;
+    left: 12%;
+}
+
+.head-text h1{
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+.head-text p{
+    font-size: 23px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    padding: 20px 0px 0px 0px;
+}
+
+.logo{
+    padding: 10px 0px 0px 0px;
+    letter-spacing: 4px;
+    color: var(--lightgreen);
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items li{
+    list-style: none;
+    padding: 15px 0px 0px 0px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #fff;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.nav-items a:hover{
+    color: var(--lightgreen);
+    transition: all 1s forwards;
+}
+
+/* ######### NAV ########### */
+
+.nav{
+    background: var(--lightgreen);
+    height: 200px;
+}
+
+.navs{
+    padding: 10px;
+}
+
+.navs-text{
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 30px 0px;
+}
+
+.navs-right{
+    display: flex;
+    position: relative;
+    font-weight: 400;
+}
+
+.navs-para{
+    padding: 0px 0px 30px 0px;
+    width: 85%;
+}
+
+.navs-right .btn{
+    position: absolute;
+    top: -62%;
+    right: 8%;
+    display: inline-block;
+    padding: 12px 14px;
+    color: var(--black);
+    cursor: pointer;
+    background-color: var(--lightgreen);
+}
+
+.navs-right .btn:hover{
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+
+/* ############ Services ########## */
+
+
+.sec{
+    margin: 70px 0px;
+}
+.section{
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.section h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section p{
+    margin: 15px 0px;
+    color: var(--lightgray);
+}
+
+/* ######## cards ####### */
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 450px;
+}
+
+.cards .card{
+    width: 350px;
+    height: 200px;
+    margin: auto;
+
+    border: 2px solid var(--lightgreen);
+}
+
+.cards .card-left{
+    float: left;
+    width: 85px;
+    height: 200px;
+}
+
+.card-left img{
+    padding: 50px 0px 0px 10px;
+}
+
+.cards .card-right{
+    float: right;
+    width: 260px;
+    height: 200px;
+    padding: 10px 20px;
+}
+
+.card .card-right h2{
+    font-size: 25px;
+    color: rgb(34, 33, 33);
+    font-weight: 400;
+}
+
+.card-right p{
+    color: var(--lightgray);
+}
+
+/* ###### Comapny ##### */
+
+.company{
+    display: flex;
+    margin: 70px 0px;
+}
+
+.left-side img{
+    width: 700px;
+    height: 550px;
+}
+
+.right-side{
+    height: 550px;
+    padding: 60px 30px 0px 30px;
+    background-color: #efefef;
+}
+
+.right-side h1{
+    font-weight: 400;
+}
+
+.right-side p{
+    color: #6c7279;
+    padding: 10px 0px;
+}
+
+.company .btn{
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.company .btn:hover{
+    color: var(--white);
+    background-color: var(--lightgreen);
+    border: none;
+}
+
+/* ########## Content ####### */
+
+.content{
+    display: flex;
+    margin: 60px 0px;
+}
+
+.content .left-content{
+    width: 650px;
+    height: 400px;
+    padding: 25px 0px;
+}
+
+.left-content h2{
+    font-weight: 400;
+    padding: 15px 0px;
+}
+
+.left-content p{
+    padding: 10px 0px;
+    color: #6c7279;
+}
+
+
+.right-content{
+    padding: 60px 15px;
+}
+
+/* ########## Gallery ########## */
+
+.gallery{
+    margin: 40px 0px 0px 0px;
+    width: 100%;
+    height: 510px;
+}
+
+.gallery1{
+    display: flex;
+    width: 100%;
+    height: 210px;
+}
+.gallery1 img{
+    width: 25%;
+    height: 210px;
+}
+
+.gallery2{
+    display: flex;
+    width: 100%;
+    height: 210px;
+}
+
+.gallery2 img{
+    width: 25%;
+    height: 210px;
+}
+
+/* ############ Team ######### */
+
+.box{
+    display: flex;
+}
+
+.box .box1{
+    width: 280px;
+    height: 450px;
+    margin: 0px 10px;
+}
+
+.box1 img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    padding: 10px 15px;
+    margin: auto;
+}
+
+.box1 h2{
+    text-align: center;
+    padding: 8px 0px 0px 0px;
+    font-weight: 400;
+}
+
+.box1 h5,p{
+    text-align: center;
+    padding: 5px 0px;
+    color: var(--lightgray);
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons .fa-brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    color: var(--lightgreen);
+    padding: 13px;
+    margin: 5px 6px;
+    border: 1px solid var(--lightgreen);
+    cursor: pointer;
+}
+
+.fa-brands:hover{
+    background-color: var(--lightgreen);
+    color: var(--white);
+}
+
+/* ######### Pricing ####### */
+
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-1{
+    width: 300px;
+    height: 400px;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    padding: 10px 0px;
+    border: 2px solid var(--lightgray);
+}
+
+
+.price h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--lightgreen);
+    padding: 10px 0px;
+}
+
+.price h1{
+    display: inline;
+    font-size: 40px;
+    border-bottom: 4px solid var(--lightgreen);
+}
+
+.price h4{
+    padding: 14px 0px 5px 0px;
+    color: var(--lightgray);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.price p{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.price .btn{
+    margin: 10px 0px 0px 0px;
+    padding: 10px 15px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    cursor: pointer;
+}
+
+.price .btn:hover{
+    color: var(--white);
+    background-color: var(--lightgreen);
+    border: none;
+}
+
+.price-2{
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    padding: 10px 0px;
+    border: 2px solid var(--lightgray);
+}
+
+.price-2 p{
+    margin: 10px 0px;
+}
+
+/* ######### Footer ######## */
+
+.footer{
+    background-color: var(--lightgreen);
+    height: 150px;
+    margin: 50px 0px 0px 0px;
+}
+
+.footer .text .para1{
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    color: var(--black);
+    font-weight: 200;
+}
+
+.footer .text .para{
+    color: var(--black);
+    padding: 20px 0px 0px 0px;
+}
